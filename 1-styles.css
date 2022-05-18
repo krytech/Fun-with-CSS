@@ -1,0 +1,21 @@
+a {
+    color: #ab2444;
+    position: relative;
+    text-decoration: none;
+}
+
+
+a::after {
+    border-bottom: 2.5px solid #ab2444;
+    color: #ab2444;
+    position: absolute;
+    content: "";
+    right: 100%;
+    bottom: 0;
+    left: 0;
+    transition: right 1s cubic-bezier(0, 0.5, 0, 1);
+}
+
+a:hover::after {
+    right: 0;
+}
